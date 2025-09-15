@@ -216,7 +216,39 @@ h1{
 }
 
 .invite,.easy-to-find,.fandom{
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.invite{
+    h2{
+        font-size: 4.5rem;
+        padding-top: 27px;
+        padding-bottom: 35px;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+    img{
+        height: 100%;
+    }
+    .big{
+        justify-content: center;
+    }
+    .small{
+        flex-direction: column;
+    }
+}
+
+.wave{
+    background-image: url(../img/wave.svg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.easy-to-find{
+    
 }
 
 .small{
