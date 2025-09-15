@@ -10,6 +10,7 @@
     --header-bcg: #3161e0;
     --text-on-h-bcg: white;
     --button-inverted: black;
+    --secondary-color: #8ea1e1;
 }
 
 /*Debug*/
@@ -262,7 +263,7 @@ h1{
         font-size: 1.9rem;
     }
     img{
-        height: 150%;
+        height: 120%;
     }
     .big{
         width: 40%;
@@ -276,7 +277,7 @@ h1{
 
 .wave{
     background-color: #f6f6f6;
-    height: 800px;
+    height: 700px;
 }
 
 .wave-1hkxOo{
@@ -288,7 +289,58 @@ h1{
     margin-bottom: 200px;
 }
 
+.fandom{
+    margin-bottom: 250px;
+    h2{
+        font-size: 4.5rem;
+        padding-top: 27px;
+        padding-bottom: 35px;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+    img{
+        height: 120%;
+    }
+    .big{
+        justify-content: center;
+    }
+    .small{
+        flex-direction: column;
+    }
+}
 
+.keep-contact{
+    text-align: center;
+     h2{
+        font-size: 4.5rem;
+        padding-top: 27px;
+        padding-bottom: 35px;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+     img{
+        width: 100%;
+    }
+    h3{
+        padding: 30px;
+        font-size: 3rem;
+        background-image: url(../img/stars.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 800px 400px;
+    }
+    button{
+        color: var(--text-on-h-bcg);
+        background-color: var(--secondary-color);
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 30px;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+}
 
 /*Footer*/
 
