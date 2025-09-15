@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*Debug*/
+
+.debug{
+
+    /*Header*/
+    header{
+        height: 50px;
+        background-color: purple;
+        .container{
+            height: 50px;
+        }
+    }
+    #logo{
+        height: 30px;
+        width: 100px;
+        background-color: green;
+    }
+    .menu{
+        height: 30px;
+        background-color: green;
+    }
+    a{
+        height: 30px;
+        width: 50px;
+        background-color: aqua;
+    }
+    button{
+        height: 30px;
+        width: 100px;
+        background-color: green;
+    }
+
+    /*Main*/
+
+    .jumbotron{
+        height: 500px;
+        background-color: blue;
+        .container{
+            height: 500px;
+            background-color: cadetblue;
+        }
+    }
+    h1{
+        height: 30px;
+        width: 200px;
+        background-color: green;
+    }
+    p{
+        height: 150px;
+        width: 200px;
+        background-color: green;
+    }
+    main section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 25px;
+        height: 550px;
+        background-color: orange;
+        .container{
+            padding: 5px;
+            height: 500px;
+            background-color: blue;
+            .big{
+                background-color: yellow;
+            }
+            .small{
+                background-color: brown;
+            }
+            .full{
+                background-color: chartreuse;
+                height: 490px;
+            }
+        }
+    }
+
+    /*footer*/
+
+    .footer-sec{
+        background-color: palevioletred;
+        .container{
+            padding: 5px;
+            height: 500px;
+            background-color: cornflowerblue;
+        }
+    }
+    .main-footer{
+        background-color: darkmagenta;
+
+    }
+    .prodotto{
+        background-color: darkkhaki;
+    }
+    .compagnia{
+        background-color: coral;
+    }
+    .risorse{
+        background-color: darkgreen;
+    }
+    .norme{
+        background-color: chocolate;
+    }
+    .footer-nav{
+        margin-top: 2px;
+        background-color: palevioletred;
+        height: 50px;
+        .container{
+            padding: 5px;
+            background-color: cornflowerblue;
+        }
+    }
+}
+
+/*Debug*/
+
+/*Header*/
+
+.d-flex{
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+nav.container{
+    justify-content: space-between;
+        align-items: center;
+    
+}
+
+nav.menu{
+    width: 50%;
+    justify-content: space-between;
+}
+
+/*Main*/
+
+.jumbotron .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+main section .container{
+    justify-content: space-between;
+}
+
+.small{
+    width: 25%;
+}
+
+.big{
+    width: 70%;
+}
+
+.full{
+    width: 100%;
+}
+
+/*Footer*/
+
+.main-footer{
+    width: 30%;
+}
+
+.footer-menu{
+    width: 70%;
+}
+
+.footer-menu div{
+    width: 25%;
+}
