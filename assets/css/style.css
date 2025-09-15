@@ -1,16 +1,22 @@
+/*css reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/*Root*/
+:root{
+    --header-bcg: #3161e0;
+    --text-on-h-bcg: white;
+    --button-inverted: black;
+}
 
 /*Debug*/
 
 .debug{
 
-    /*Header*/
+    /*Debug-Header*/
     header{
         height: 50px;
         background-color: purple;
@@ -38,7 +44,9 @@
         background-color: green;
     }
 
-    /*Main*/
+    
+
+    /*Debug-Main*/
 
     .jumbotron{
         height: 500px;
@@ -81,7 +89,7 @@
         }
     }
 
-    /*footer*/
+    /*Debug-Footer*/
 
     .footer-sec{
         background-color: palevioletred;
@@ -108,7 +116,7 @@
         background-color: chocolate;
     }
     .footer-nav{
-        margin-top: 2px;
+        border-top: 2px solid white;
         background-color: palevioletred;
         height: 50px;
         .container{
@@ -118,9 +126,9 @@
     }
 }
 
-/*Debug*/
+/*Utilities*/
 
-/*Header*/
+/*Common*/
 
 .d-flex{
     display: flex;
@@ -129,6 +137,12 @@
 .container{
     margin: 0 auto;
     width: 80%;
+}
+
+/*Header*/
+
+header{
+    background-color: var(--header-bcg);
 }
 
 nav.container{
@@ -140,18 +154,68 @@ nav.container{
 nav.menu{
     width: 50%;
     justify-content: space-between;
+    a{
+        color: var(--text-on-h-bcg);
+        text-decoration: none;
+    }
+}
+
+.accedi{
+    background-color: var(--text-on-h-bcg);
+    padding: 7px;
+    border: 1px solid var(--text-on-h-bcg);
+    border-radius: 15px;
+
 }
 
 /*Main*/
 
+.jumbotron{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
 .jumbotron .container{
+    width: 50%;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     justify-content: center;
+    p{
+        font-size: 1.8rem;
+        text-align: center;
+        color:  var(--text-on-h-bcg);
+    }
 }
 
-main section .container{
+h1{
+    color: var(--text-on-h-bcg);
+    font-size: 5rem;
+}
+
+.mac{
+    background-color: var(--text-on-h-bcg);
+    padding: 15px;
+    border: 1px solid var(--text-on-h-bcg);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.browser{
+    color: var(--text-on-h-bcg);
+    background-color: var(--button-inverted);
+    padding: 15px;
+    border: 1px solid var(--button-inverted);
+    border-radius: 30px;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.invite,.easy-to-find,.fandom{
     justify-content: space-between;
 }
 
