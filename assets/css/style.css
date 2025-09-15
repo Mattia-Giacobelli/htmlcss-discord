@@ -11,6 +11,10 @@
     --text-on-h-bcg: white;
     --button-inverted: black;
     --secondary-color: #8ea1e1;
+    --main-title: 5rem;
+    --secondary-title: 4.5rem;
+    --p-font-size: 1.9rem;
+    --footer-font-size: 1.2rem;
 }
 
 /*Debug*/
@@ -151,6 +155,19 @@
 .full{
     width: 100%;
 }
+
+.main-footer{
+    width: 30%;
+}
+
+.footer-menu{
+    width: 70%;
+}
+
+.footer-menu div{
+    width: 25%;
+}
+
 /*Header*/
 
 header{
@@ -197,7 +214,7 @@ nav.menu{
     gap: 15px;
     justify-content: center;
     p{
-        font-size: 1.8rem;
+        font-size: var(--p-font-size);
         text-align: center;
         color:  var(--text-on-h-bcg);
     }
@@ -205,7 +222,7 @@ nav.menu{
 
 h1{
     color: var(--text-on-h-bcg);
-    font-size: 5rem;
+    font-size: var(--main-title);
 }
 
 .mac{
@@ -235,12 +252,12 @@ h1{
 .invite{
     margin-top: 150px;
     h2{
-        font-size: 4.5rem;
+        font-size: var(--secondary-title);
         padding-top: 27px;
         padding-bottom: 35px;
     }
     p{
-        font-size: 1.9rem;
+        font-size: var(--p-font-size);
     }
     img{
         height: 100%;
@@ -255,12 +272,12 @@ h1{
 
 .easy-to-find{
     h2{
-        font-size: 4.5rem;
-        padding-top: 27px;S
+        font-size: var(--secondary-title);
+        padding-top: 27px;
         padding-bottom: 35px;
     }
     p{
-        font-size: 1.9rem;
+        font-size: var(--p-font-size);
     }
     img{
         height: 120%;
@@ -292,12 +309,12 @@ h1{
 .fandom{
     margin-bottom: 250px;
     h2{
-        font-size: 4.5rem;
+        font-size: var(--secondary-title);
         padding-top: 27px;
         padding-bottom: 35px;
     }
     p{
-        font-size: 1.9rem;
+        font-size: var(--p-font-size);
     }
     img{
         height: 120%;
@@ -313,12 +330,12 @@ h1{
 .keep-contact{
     text-align: center;
      h2{
-        font-size: 4.5rem;
+        font-size: var(--secondary-title);
         padding-top: 27px;
         padding-bottom: 35px;
     }
     p{
-        font-size: 1.9rem;
+        font-size: var(--p-font-size);
     }
      img{
         width: 100%;
@@ -342,16 +359,63 @@ h1{
     }
 }
 
+.wave-keep{
+    background-color: #f6f6f6;
+    height: 1500px;
+}
 /*Footer*/
+footer{
+    background-color: #23272a;
+}
+
+.footer-sec{
+    padding: 50px;
+}
 
 .main-footer{
-    width: 30%;
+    h3{
+        color: var(--secondary-color);
+        font-size: 3rem; 
+        padding-bottom: 20px; 
+    }
+    p{
+        color: var(--text-on-h-bcg);
+        font-size: var(--footer-font-size);
+    }
+    img{
+        height: 20px;
+        width: 20px;
+        display: inline-blo;
+        padding-right: 3px;
+    }
 }
 
-.footer-menu{
-    width: 70%;
+.prodotto,.compagnia,.risorse,.norme{
+    font-size: var(--footer-font-size);
+    padding-top: 15px;
+    ul{
+        list-style: none;
+    }
+    li{
+        color: var(--text-on-h-bcg);
+        padding: 10px;
+    }
+    span{
+        color: var(--secondary-color);
+    }
 }
 
-.footer-menu div{
-    width: 25%;
+.footer-nav{
+    align-items: center;
+    padding-top: 10px;
+    border-top: 2px solid var(--secondary-color);
+    button{
+        color: var(--text-on-h-bcg);
+        background-color: var(--secondary-color);
+        padding: 15px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 30px;
+        font-size: 1.4rem;
+        margin: 10px;
+    }
 }
